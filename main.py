@@ -102,7 +102,7 @@ async def animal(ctx, animal):
 async def chat(ctx, *, message):
     message = urllib.parse.quote_plus(message)
     r = requests.get(
-        f"https://some-random-api.ml/chatbot?message={message}&key=lzHwMOIZXt5fpKKwon22XjZmf"
+        f"https://some-random-api.ml/chatbot?message={message}&key=URL_API_KEY"
     )
     resp = r.json()["response"]
     await ctx.channel.send(resp)
@@ -215,10 +215,10 @@ async def rickroll(ctx, user: discord.User):
 async def invite(ctx):
     e = discord.Embed(
         title="Invite Me!",
-        description=f"You can invite me to ur server [here](https://discord.com/api/oauth2/authorize?client_id=887264426674237501&permissions=8&scope=bot).",
+        description=f"You can invite me to ur server [here](INVITE_URL).",
         color=0xFFA500,
     )
     await ctx.channel.send(embed=e)
 
 
-bot.run("ODg3MjY0NDI2Njc0MjM3NTAx.YUBnYw.79ernLHCMSTc1qbbls3XwQUOtlo")
+bot.run("BOT_TOKEN")
