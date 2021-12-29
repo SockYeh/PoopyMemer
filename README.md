@@ -1,2 +1,2 @@
 # PoopyMemer
-## Random bot made by SockYeh (discord: SockYeh#0001)
+## A discord bot made using discord.py which has economy, fun and more commands!
